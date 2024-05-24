@@ -21,35 +21,29 @@ The methodology involves leveraging the power of deep learning algorithms, speci
 
 These models were rigorously trained and evaluated using a diverse dataset of waste images. The key findings revealed that the VGG19 model outperformed the others, achieving the highest classification accuracy, closely followed by the ResNet152 model. Consequently, these two models were selected for integration into the final waste classification system.
 
+## Repository Structure
 
-## Installation
-To run this project locally, follow these steps:
+- `models/`: Contains the pre-trained ResNet50, ResNet152, VGG16 and VGG19 models.
+- `app.py`: The Python file for the Flask web application.
+- `templates/`: Directory containing HTML templates for the web interface.
+- `static/`: Directory for static files (images).
+- `requirements.txt`: List of required Python packages and dependencies.
+- `README.md`: This file, providing an overview of the project and instructions.
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/solid-waste-classification.git
-   cd solid-waste-classification
-   ```
+## Getting Started
 
-2. **Install Dependencies**
-   Ensure you have Python installed. Then install the required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Download Pre-trained Models**
-   Download the pre-trained VGG19 and ResNet152 models and place them in the `models` directory.
+1. Clone the repository: `git clone https://github.com/your-username/solid-waste-classification.git`
+2. Install the required dependencies: `pip install -r requirements.txt`
+3. Run the Flask application: `python app.py`
+4. Access the web interface by navigating to `http://localhost:5000` in your web browser.
 
 ## Usage
-1. **Run the Application**
-   ```bash
-   python app.py
-   ```
 
-2. **Using the Interface**
-   - Upload or capture an image of the waste.
-   - Select the classification model (VGG19 or ResNet152).
-   - Click "Classify" to see the results.
+1. Visit the web application in your browser.
+2. Choose either the "Upload Image" or "Capture Image" option to provide an image of waste.
+3. The system will process the image through the ResNet152 or VGG19 model and display the predicted waste category.
+4. Additional information about the classified waste material, including its environmental impact and recommended disposal or recycling methods, will be provided.
+
 
 ## Dataset
 The dataset used for training and evaluation includes diverse images of waste materials which I have added to this repository
@@ -65,3 +59,9 @@ Waste classification, ResNet, VGG, Image classification, Deep learning, Organic 
 
 ## Contact
 For any questions or inquiries, please contact [your-email@example.com](mailto:juhiesayyed44@gmail.com).
+
+## Contributors
+1. Juhie Sayyed
+2. Ajay Kumar
+3. Vedant Khergade
+4. Rahul Baser
